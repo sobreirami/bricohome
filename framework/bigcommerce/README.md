@@ -218,7 +218,7 @@ const AddToCartButton = ({ productId, variantId }) => {
     })
   }
 
-  return <button onClick={addToCart}>Add To Cart</button>
+  return <button onClick={addToCart}>Adicionar ao carrinho</button>
 }
 ...
 ```

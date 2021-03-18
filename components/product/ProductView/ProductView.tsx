@@ -138,14 +138,14 @@ const ProductView: FC<Props> = ({ product }) => {
           </section>
           <div>
             <Button
-              aria-label="Add to Cart"
+              aria-label="Adicionar ao carrinho"
               type="button"
               className={s.button}
               onClick={addToCart}
               loading={loading}
               disabled={!variant && product.options.length > 0}
             >
-              Add to Cart
+              Adicionar ao carrinho
             </Button>
           </div>
         </div>

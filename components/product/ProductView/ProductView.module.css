@@ -7,7 +7,7 @@
 }
 
 .productDisplay {
-  @apply relative flex px-0 pb-0 box-border col-span-1 bg-violet;
+  @apply relative flex px-0 pb-0 box-border col-span-1 bg-green;
   min-height: 600px;
 
   @screen md {
@@ -24,7 +24,7 @@
 }
 
 .squareBg {
-  @apply absolute inset-0 bg-violet z-0 h-full;
+  @apply absolute inset-0 bg-green z-0 h-full;
 }
 
 .nameBox {

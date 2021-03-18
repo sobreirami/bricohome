@@ -108,8 +108,8 @@ export default function Search({
                   aria-expanded="true"
                 >
                   {activeCategory?.name
-                    ? `Category: ${activeCategory?.name}`
-                    : 'All Categories'}
+                    ? `Categoria: ${activeCategory?.name}`
+                    : 'Categorias'}
                   <svg
                     className="-mr-1 ml-2 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +156,7 @@ export default function Search({
                             'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
                           }
                         >
-                          All Categories
+                          Categorias
                         </a>
                       </Link>
                     </li>
@@ -206,9 +206,7 @@ export default function Search({
                   aria-haspopup="true"
                   aria-expanded="true"
                 >
-                  {activeBrand?.name
-                    ? `Design: ${activeBrand?.name}`
-                    : 'All Designs'}
+                  {activeBrand?.name ? `Marca: ${activeBrand?.name}` : 'Marcas'}
                   <svg
                     className="-mr-1 ml-2 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -258,7 +256,7 @@ export default function Search({
                             'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
                           }
                         >
-                          All Designers
+                          Marcas
                         </a>
                       </Link>
                     </li>
@@ -323,22 +321,22 @@ export default function Search({
                   >
                     {q ? (
                       <>
-                        There are no products that match "<strong>{q}</strong>"
+                        Não há produtos que correspondam "<strong>{q}</strong>"
                       </>
                     ) : (
                       <>
-                        There are no products that match the selected category &
-                        designer
+                        Não há produtos que correspondam à categoria selecionada
+                        e marca
                       </>
                     )}
                   </span>
                 </>
               ) : q ? (
                 <>
-                  Searching for: "<strong>{q}</strong>"
+                  Procurando por: "<strong>{q}</strong>"
                 </>
               ) : (
-                <>Searching...</>
+                <>Procurando...</>
               )}
             </div>
           )}
@@ -427,7 +425,7 @@ export default function Search({
                             'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
                           }
                         >
-                          Relevance
+                          Relevância
                         </a>
                       </Link>
                     </li>

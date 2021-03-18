@@ -46,10 +46,11 @@ export default function Cart() {
               <Bag className="absolute" />
             </span>
             <h2 className="pt-6 text-2xl font-bold tracking-wide text-center">
-              Your cart is empty
+              Seu carrinho está vazio
             </h2>
             <p className="text-accents-6 px-10 text-center pt-2">
-              Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
+              Biscoito bolo de aveia bolacha de confeiteiro sorvete de bolo de
+              pudim.
             </p>
           </div>
         ) : error ? (
@@ -58,8 +59,8 @@ export default function Cart() {
               <Cross width={24} height={24} />
             </span>
             <h2 className="pt-6 text-xl font-light text-center">
-              We couldn’t process the purchase. Please check your card
-              information and try again.
+              Não foi possível processar a compra. Por favor, verifique o seu
+              cartão informações e tente novamente.
             </h2>
           </div>
         ) : success ? (
@@ -68,7 +69,7 @@ export default function Cart() {
               <Check />
             </span>
             <h2 className="pt-6 text-xl font-light text-center">
-              Thank you for your order.
+              Obrigado pelo seu pedido.
             </h2>
           </div>
         ) : (
@@ -86,8 +87,8 @@ export default function Cart() {
             </ul>
             <div className="my-6">
               <Text>
-                Before you leave, take a look at these items. We picked them
-                just for you
+                Antes de sair, dê uma olhada nesses itens. Nós os escolhemos
+                apenas para você
               </Text>
               <div className="flex py-6 space-x-6">
                 {[1, 2, 3, 4, 5, 6].map((x) => (
@@ -112,7 +113,9 @@ export default function Cart() {
                   <MapPin />
                 </div>
                 <div className="text-sm text-center font-medium">
-                  <span className="uppercase">+ Add Shipping Address</span>
+                  <span className="uppercase">
+                    + Adicionar endereço de entrega
+                  </span>
                   {/* <span>
                     1046 Kearny Street.<br/>
                     San Franssisco, California
@@ -126,7 +129,9 @@ export default function Cart() {
                   <CreditCard />
                 </div>
                 <div className="text-sm text-center font-medium">
-                  <span className="uppercase">+ Add Payment Method</span>
+                  <span className="uppercase">
+                    + Adicionar método de pagamento
+                  </span>
                   {/* <span>VISA #### #### #### 2345</span> */}
                 </div>
               </div>
@@ -139,12 +144,12 @@ export default function Cart() {
                 <span>{subTotal}</span>
               </li>
               <li className="flex justify-between py-1">
-                <span>Taxes</span>
-                <span>Calculated at checkout</span>
+                <span>Impostos</span>
+                <span>Calcular ao finalizar</span>
               </li>
               <li className="flex justify-between py-1">
-                <span>Estimated Shipping</span>
-                <span className="font-bold tracking-wide">FREE</span>
+                <span>Envio Estimado</span>
+                <span className="font-bold tracking-wide">GRATUITAMENTE</span>
               </li>
             </ul>
             <div className="flex justify-between border-t border-accents-2 py-3 font-bold mb-10">
@@ -156,11 +161,11 @@ export default function Cart() {
             <div className="w-full lg:w-72">
               {isEmpty ? (
                 <Button href="/" Component="a" width="100%">
-                  Continue Shopping
+                  Continue comprando
                 </Button>
               ) : (
                 <Button href="/checkout" Component="a" width="100%">
-                  Proceed to Checkout
+                  Fazer o check-out
                 </Button>
               )}
             </div>

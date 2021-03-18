@@ -31,7 +31,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
                 <span className="rounded-full border border-gray-700 mr-2">
                   <Logo />
                 </span>
-                <span>ACME</span>
+                <span>Bricohome</span>
               </a>
             </Link>
           </div>
@@ -41,13 +41,6 @@ const Footer: FC<Props> = ({ className, pages }) => {
                 <Link href="/">
                   <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
                     Home
-                  </a>
-                </Link>
-              </li>
-              <li className="py-3 md:py-0 md:pb-4">
-                <Link href="/">
-                  <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
-                    Careers
                   </a>
                 </Link>
               </li>
@@ -97,20 +90,20 @@ const Footer: FC<Props> = ({ className, pages }) => {
         </div>
         <div className="py-12 flex flex-col md:flex-row justify-between items-center space-y-4">
           <div>
-            <span>&copy; 2020 ACME, Inc. All rights reserved.</span>
+            <span>&copy; 2020 Bricohome, Todos os direitos reservados</span>
           </div>
           <div className="flex items-center text-primary">
             <span className="text-primary">Crafted by</span>
             <a
               rel="noopener"
-              href="https://vercel.com"
-              aria-label="Vercel.com Link"
+              href="https://bricohome.com.br"
+              aria-label="Bricohome"
               target="_blank"
               className="text-primary"
             >
               <Vercel
                 className="inline-block h-6 ml-4 text-primary"
-                alt="Vercel.com Logo"
+                alt="Bricohome Logo"
               />
             </a>
           </div>
